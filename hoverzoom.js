@@ -81,7 +81,7 @@ $(document).ready(function(){
 			left: imgPos.left+'px',
 			top: imgPos.top+'px',
 			height: imgSize.height,
-			maxWidth: (window.innerWidth-IMG_OFFSET)+'px',
+			maxWidth: (window.innerWidth)+'px',
 			//width: imgSize.width,
 		};
 		$(this).css(cssObj);
@@ -106,7 +106,7 @@ $(document).ready(function(){
 			left: imgPos.left+'px',
 			top: imgPos.top+'px',
 			height: imgSize.height,
-			maxWidth: (window.innerWidth-IMG_OFFSET)+'px',
+			maxWidth: (window.innerWidth)+'px',
 			//width: imgSize.width,
 		});
 		return;

@@ -1,3 +1,7 @@
+html,body {
+	margin: 0;
+	padding:0;
+}
 #content {
 	width:80%;
 	border: 1px solid #CACACA;
@@ -8,9 +12,9 @@
 	min-height: 500px;
 
 }
-#imgs {
+.imgs {
     width: 100%;
-    height: 50px;
+    margin-bottom:20px;
     display: -webkit-box;
     /* iOS 6-, Safari 3.1-6 */
     display: -moz-box;
@@ -37,12 +41,28 @@
     flex-flow: row wrap;
     justify-content: space-between;
 }
-#imgs > img {
+.imgs > img {
     width: 150px;
     background-color: #EFEFEF;
     border:1px solid black;
 }
 
-#footer {
+.key {
+	color:#555;
+	font-style: italic;
+}
+
+.clearboth {
 	clear:both;
+}
+#footer {
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin:0;
+	background-color:#eaeaea;
+}
+#footerContent {
+	margin-left:20px;
 }
