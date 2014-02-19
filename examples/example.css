@@ -1,0 +1,48 @@
+#content {
+	width:80%;
+	border: 1px solid #CACACA;
+	box-shadow: 3px 0 10px #DADADA;
+	margin:auto;
+	margin-top: 20px;
+	padding:20px;
+	min-height: 500px;
+
+}
+#imgs {
+    width: 100%;
+    height: 50px;
+    display: -webkit-box;
+    /* iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* Firefox 19- */
+    display: -ms-flexbox;
+    /* IE 10 */
+    display: -webkit-flex;
+    /* Chrome */
+    display: flex;
+    /* Opera 12.1, Firefox 20+ */
+    /* iOS 6-, Safari 3.1-6 */
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: justify;
+    /* Firefox 19- */
+    -moz-flex-flow: row wrap;
+    -moz-justify-content: space-between;
+    /* Chrome */
+    -webkit-flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    /* IE10 */
+    -ms-flex-flow: row wrap;
+    -ms-justify-content: space-between;
+    /* Opera 12.1, Firefox 20+ */
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+#imgs > img {
+    width: 150px;
+    background-color: #EFEFEF;
+    border:1px solid black;
+}
+
+#footer {
+	clear:both;
+}

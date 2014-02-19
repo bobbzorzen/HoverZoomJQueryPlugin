@@ -53,7 +53,7 @@ $(document).ready(function(){
 		}
 
 		// Make sure that the img doesn't go outside the screen to the left or the right.
-		if((imgLeft+imgImg.width) > documentWidth) {
+		if((imgLeft+imgImg.width) > documentWidth-IMG_OFFSET) {
 			imgLeft -= imgImg.width+IMG_OFFSET*2;
 		}
 
@@ -81,6 +81,7 @@ $(document).ready(function(){
 			left: imgPos.left+'px',
 			top: imgPos.top+'px',
 			height: imgSize.height,
+			maxWidth: (window.innerWidth-IMG_OFFSET)+'px',
 			//width: imgSize.width,
 		};
 		$(this).css(cssObj);
@@ -105,6 +106,7 @@ $(document).ready(function(){
 			left: imgPos.left+'px',
 			top: imgPos.top+'px',
 			height: imgSize.height,
+			maxWidth: (window.innerWidth-IMG_OFFSET)+'px',
 			//width: imgSize.width,
 		});
 		return;
